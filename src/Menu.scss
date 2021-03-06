@@ -1,0 +1,94 @@
+$full__size: 700px;
+
+@mixin full {
+  @media (min-width: #{$full__size}) {
+    @content;
+  }
+}
+
+.menu {
+
+  .menu__orderBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    font-size: 1.15em;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 15px 18px;
+    background-color: #b42025;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  .menu__img {
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.41), rgba(0, 0, 0, 0.41)),url("img/order2.jpg");
+    // background: url("img/order2.jpg");
+    background-size: cover;
+    background-position:center;
+    object-fit: contain;
+    // position: relative; 
+    
+    
+  
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+
+  .menu__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin-top: 50px;
+    font-size: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    transform: translate(0, 65px);
+    font-family: 'Satisfy', cursive;
+
+    @include full {
+        font-size: 3rem;
+    }
+  }
+
+  .menu__container {
+    width: 85%;
+    // margin-top: 50px;
+    margin-left: 20px;
+    // margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu__category {
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    border-bottom: 1.5px solid rgb(42, 41, 90);
+  }
+  p {
+    margin-top: 15px;
+    font-size: 11px;
+  }
+
+  .menu__card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(174, 174, 184);
+  }
+
+  .menu__price {
+    margin-bottom: 15px;
+  }
+}

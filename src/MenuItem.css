@@ -1,0 +1,30 @@
+.burritoPlate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 100px;
+  width: 90vw;
+}
+
+.burritoPlate .burritoPlate__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  margin: 30px 0px 0px 0px;
+}
+
+.burritoPlate .burritoPlate__bg {
+  background: url(img/Adrians.png);
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+}
+/*# sourceMappingURL=BurritoPlate.css.map */

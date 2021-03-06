@@ -1,0 +1,109 @@
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #252533;
+  height: 100%;
+  color: #fff;
+  padding: 20px;
+}
+
+@media (min-width: 440px) {
+  .footer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.footer .footer__title {
+  font-size: 50px;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 440px) {
+  .footer .footer__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.footer .footer__btn {
+  font-size: 1.15em;
+  border-radius: 4px;
+  padding: 12px 10px;
+  background-color: #b42025;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 440px) {
+  .footer .footer__btn {
+    width: 99vw;
+  }
+}
+
+.footer .footer__hour {
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+
+.footer .footer__open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid grey;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 440px) {
+  .footer .footer__open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer li {
+  list-style: none;
+}
+
+.footer .footer__p {
+  color: #777780;
+}
+/*# sourceMappingURL=Footer.css.map */

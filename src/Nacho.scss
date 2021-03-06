@@ -1,0 +1,20 @@
+.nacho {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    width: 90vw;
+
+    .nacho__bg {
+        background: url(img/nachos.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 50px;
+    }
+
+    .nacho__menu {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid lightgray;
+        margin: 30px 0px 0px 0px;
+    }
+}

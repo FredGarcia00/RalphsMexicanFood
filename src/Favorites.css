@@ -1,0 +1,68 @@
+.favorites {
+  background-size: cover;
+  background-position: center;
+  background: #4d5d8d;
+  padding: 80px 0;
+}
+
+.favorites .favorites__title {
+  font-family: cursive;
+  background: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  padding: 30px 10px;
+}
+
+.favorites .favorites__local {
+  font-family: cursive;
+  font-size: 14px;
+  color: red;
+}
+
+.favorites .favorites__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin: 10px;
+  padding: 20px 5px;
+  background: white;
+}
+
+.favorites .favorites__pic1 {
+  background: url(img/quesadilla.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+}
+
+.favorites .favorites__pic2 {
+  background: url(img/Burrito2.png);
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+}
+
+.favorites .favorites__pic3 {
+  background: url(img/BreakfastBurrito.png);
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+}
+
+.favorites .favorites__pic4 {
+  background: url(img/Burritopng.png);
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+}
+
+.favorites .favorites__pic5 {
+  background: url(img/nachos.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+}
+/*# sourceMappingURL=Favorites.css.map */

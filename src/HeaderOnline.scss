@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+.headerO {
+    position: sticky;
+    top: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgb(116, 0, 96);
+    padding: 10px;
+    margin-bottom: 15px;
+    z-index: 100;
+    // position: relative;
+
+    .headerO__title {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    .headerO__t {
+        font-family: 'Satisfy';
+        font-size: 30px;
+        color: #fff;
+    }
+
+    .headerO__border {
+        top: 0;
+        bottom: 0;
+        border-right: 1px solid gray;
+        position: absolute;
+        transform: translateX(100px);
+    }
+    .headerO__border-2 {
+        top: 0;
+        bottom: 0;
+        border-right: 1px solid gray;
+        transform:translateX(189px);
+        position:absolute;
+    }
+
+    .headerO__cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+    }
+
+    .headerO__cartIcon {
+        display: flex;
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .headerO__num {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #fff;
+        background: rgb(201, 10, 58);
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+    }
+}

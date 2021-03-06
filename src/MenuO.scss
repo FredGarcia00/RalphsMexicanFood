@@ -1,0 +1,98 @@
+$full: 700px;
+
+@mixin fullScreen {
+  @media (min-width: #{$full}) {
+    @content;
+  }
+}
+
+.menuO {
+  .menuO__full {
+   
+    display: none;
+
+    @include fullScreen {
+    
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .menuO__change {
+    @include fullScreen {
+      display: none;
+    }
+  }
+
+  .menuO__bg {
+    background: url(img/bowl.jpg);
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+    padding: 50px;
+    @include fullScreen {
+      height: 30vh;
+    }
+  }
+
+  .menuO__bg1 {
+    background: url(img/b.jpg);
+    background-size: cover;
+    background-position-y: -75px;
+    object-fit: contain;
+    padding: 50px;
+    
+    @include fullScreen {
+      height: 30vh;
+      background-position:center;
+    }
+  }
+
+  .menuO__bg2 {
+    background: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+    padding: 50px;
+    @include fullScreen {
+      height: 30vh;
+    }
+  }
+
+  .MenuO__bg3 {
+    background: url(img/salad.jpg);
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+    padding: 50px;
+    @include fullScreen {
+      height: 30vh;
+    }
+  }
+
+  .MenuO__bg4 {
+    background: url(img/fries.jpg);
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+    padding: 50px;
+    @include fullScreen {
+      height: 30vh;
+    }
+  }
+
+  .MenuO__bg5 {
+    background: url(img/nachos.jpg);
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+    padding: 50px;
+    @include fullScreen {
+      height: 30vh;
+    }
+  }
+
+  .MuiAccordionSummary-content {
+    margin-bottom: 15px;
+  }
+}

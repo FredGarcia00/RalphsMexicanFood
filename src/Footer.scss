@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+$footer: 440px;
+
+
+@mixin footer {
+    @media (min-width: #{$footer}){
+        @content;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background: rgb(37, 37, 51);
+    height: 100%;
+    color: #fff;
+    padding: 20px;
+
+    @include footer {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer__title {
+        font-size: 50px;
+        line-height: 48px;
+        margin-bottom: 20px;
+        font-family: 'Satisfy', cursive;
+        @include footer {
+            font-size: 40px;
+        }
+
+    }
+
+    .footer__btn {
+        font-size: 1.15em;
+        font-family: 'Satisfy', cursive;
+        border-radius: 4px;
+        padding: 12px 10px;
+        background-color:#b42025;
+        border: none;
+        color: #fff;
+        font-weight: 600;
+        text-transform: capitalize;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    .footer__hour {
+        font-size: 30px;
+        font-family: 'Satisfy', cursive;
+        margin-bottom: 18px;
+    }
+
+    .footer__open {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: space-between;
+        margin-bottom: 10px;        
+        // @include footer {
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        
+        //  }
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    .footer__p {
+        border-top: 1px solid grey;
+        color:rgb(119, 119, 128);
+    }
+
+}

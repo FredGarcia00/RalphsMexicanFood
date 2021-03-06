@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEE,MAFI,CAEJ,4BAA4B,CAAC;EACzB,aAAa,EAAE,IAAI;CACtB",
+    "sources": [
+        "MenuO.scss"
+    ],
+    "names": [],
+    "file": "MenuO.css"
+}

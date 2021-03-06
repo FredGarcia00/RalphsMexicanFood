@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACR,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,aAAa,EAAE,IAAI;EACnB,KAAK,EAAE,IAAI;CAQd;;AAZD,AAMI,WANO,CAMP,iBAAiB,CAAC;EACd,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,aAAa,EAAE,mBAAmB;EAClC,MAAM,EAAE,gBAAgB;CAC3B",
+    "sources": [
+        "AsadaFries.scss"
+    ],
+    "names": [],
+    "file": "AsadaFries.css"
+}

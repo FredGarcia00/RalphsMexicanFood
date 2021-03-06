@@ -1,0 +1,101 @@
+$max: 768px;
+$large: 700px;
+$medium: 542px;
+$small: 440px;
+
+@mixin maxScreen {
+  @media (min-width: #{$max}) {
+    @content;
+  }
+}
+
+@mixin mediumScreen {
+  @media (min-width: #{$medium}) {
+    @content;
+  }
+}
+
+@mixin smallScreen {
+  @media (min-width: #{$small}) {
+    @content;
+  }
+}
+
+.pop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.9);
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+
+  @include maxScreen {
+        left: 0;
+        right: 0;
+}
+
+  .pop__container {
+    position: fixed;
+    background: url(img/happy2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+
+    @include maxScreen {
+        width: 100vw;
+        margin: auto;
+    }
+  }
+
+  .pop__customer {
+    font-size: 30px;
+    transform: translate(53px, 393px);
+    color: #fff;
+    font-weight: 600;
+
+    align-items: center;
+    position: absolute;
+
+    @include smallScreen {
+      transform: translate(142px, 380px);
+    }
+    @include mediumScreen {
+      transform: translate(214px, 380px);
+    }
+    @include maxScreen {
+      transform: translate(214px, 431px);
+      font-size: 35px;
+    }
+  }
+
+  p {
+    transform: translate(53px, 430px);
+    color: #fff;
+    font-size: 18px;
+
+    @include smallScreen {
+      transform: translate(142px, 430px);
+    }
+
+    @include mediumScreen {
+      transform: translate(214px, 430px);
+    }
+    @include maxScreen {
+      transform: translate(214px, 475px);
+      font-size: 15px;
+    }
+  }
+}
+
+.pop__hidden {
+  display: none;
+}
