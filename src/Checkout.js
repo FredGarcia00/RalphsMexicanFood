@@ -73,7 +73,7 @@ function Checkout() {
                                   <div className="checkout__total">
                                 Total: {value} 
                                   </div>
-                                <button className="checkout__currency" disabled={name !='' ? false : true} onClick={orderComplete}>Complete order</button>
+                                <button className="checkout__currency" disabled={name !=='' ? false : true} onClick={orderComplete}>Complete order</button>
                               </div>
                        )}
                        decimalScale={2}
