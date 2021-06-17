@@ -23,9 +23,7 @@ $full__size: 700px;
   height: 8vh;
   width: 100%;
   z-index: 100;
-  //   margin: 10px 0;
-  // background-color: green;
-  // background: linear-gradient(rgba(37, 37, 51, 0.9), rgba(37, 37, 51, 0.9));
+ 
 
   @include full {
     height: 12vh;
@@ -114,14 +112,7 @@ $full__size: 700px;
     margin-bottom: 10px;
     list-style: none;
   }
-  // .header__close {
-  //   top: 16px;
-  //   right: 11px;
-  //   position: absolute;
-  //   cursor: pointer;
-  //   transition: 2s ease-in;
-  //   // position: fixed;
-  // }
+ 
   
   .header__link1 {
     color: #fff;
